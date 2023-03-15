@@ -1,6 +1,6 @@
 package org.exercise.java;
 
-public class Dolphin extends Animal{
+public class Dolphin extends Animal implements HasSwim{
 
     public Dolphin(String name) {
         super(name);
@@ -15,4 +15,10 @@ public class Dolphin extends Animal{
     public void eat() {
         System.out.println("Pesci ");
     }
+
+    @Override
+    public void swim() {
+        System.out.println("Sto nuotando ");
+    }
+
 }

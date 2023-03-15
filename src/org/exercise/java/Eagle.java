@@ -1,6 +1,6 @@
 package org.exercise.java;
 
-public class Eagle extends Animal{
+public class Eagle extends Animal implements HasFly{
     public Eagle(String name) {
         super(name);
     }
@@ -14,4 +14,10 @@ public class Eagle extends Animal{
     public void eat() {
         System.out.println("Carne ");
     }
+
+    @Override
+    public void fly() {
+        System.out.println("Sto volando ");
+    }
+
 }
